@@ -17,5 +17,69 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>To-Do</h1>
+    </header>
+
+    <aside>
+      <button></button>
+      <ul>
+        <li><i class="fa-regular fa-face-smile"></i>Welcome</li>
+        <li><i class="fa-regular fa-gauge-simple-high"></i>Dashboard</li>
+        <li><i class="fa-regular fa-clipboard"></i>Tasks</li>
+        <li><i class="fa-regular fa-users"></i>People</li>
+        <li>Reports</li>
+        <li>Billing</li>
+        <li>Integrations</li>
+      </ul>
+    </aside>
+
+    <hr />
+    <main>
+      <section>
+        <button><i class="fa-regular fa-plus"></i> New Task</button>
+        <button><i class="fa-regular fa-filter"></i> Filters</button>
+      </section>
+
+      <section class="tasks">
+        <input type="checkbox" name="tasks" id="onboarding" value="finish" />
+        <label for="onboarding">Finish user onboarding</label>
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> Tomorrow
+          <span><i class="fa-regular fa-message"></i> 1</span>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <input type="checkbox" name="tasks" id="issue" value="solve" />
+        <label for="issue">Solve the Dabble prioritisation issue</label>
+        <div>
+          <i class="fa-regular fa-calendar-days"></i>Jan 8, 2022
+          <span
+            ><i class="fa-regular fa-message"></i>2
+            <i class="fa-regular fa-paperclip"></i> 1
+          </span>
+        </div>
+        <button>LaunchPad</button>
+      </section>
+
+      <section class="tasks">
+        <input type="checkbox" name="tasks" id="record" value="hold" />
+        <label for="record">Hold to recorder on mobile</label>
+        <div><i class="fa-regular fa-calendar-days"></i>Jan 10, 2022</div>
+        <button>Dabble</button>
+      </section>
+
+      <section class="others">
+        <input type="checkbox" name="others" id="update" value="update" />
+        <label for="update">Update onboarding workflow templates</label>
+      </section>
+
+      <section class="others">
+        <input type="checkbox" name="others" id="connect" value="update" />
+        <label for="connect">Connect time tracking with tasks</label>
+      </section>
+    </main>
+  </body>
 </html>
