@@ -29,8 +29,9 @@ main {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   color: var(--gray);
+  border-top: 1.5px solid var(--gray);
 }
 
 li {
@@ -61,6 +62,7 @@ li {
 
 header {
   border-bottom: 1.5px solid var(--gray);
+  padding: 2px;
 }
 
 .new {
