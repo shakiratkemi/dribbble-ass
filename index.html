@@ -17,86 +17,91 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <header>
-      <hr />
-      <h2>To-Do</h2>
-    </header>
+    <article class="page">
+      <main class="page-top">
+        <aside class="options">
+          <button></button>
+          <span class="angle"><i class="fa-solid fa-angles-left"></i></span>
 
-    <aside class="options">
-      <hr />
-      <button></button>
-      <ul>
-        <li><i class="fa-regular fa-face-smile"></i> Welcome</li>
-        <li><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</li>
-        <li><i class="fa-regular fa-clipboard"></i> Tasks</li>
-        <li><i class="fa-solid fa-users"></i> People</li>
-        <li><i class="fa-solid fa-chart-simple"></i> Reports</li>
-        <li><i class="fa-regular fa-dollar-sign"></i> Billing</li>
-        <li><i class="fa-solid fa-cubes-stacked"></i> Integrations</li>
-      </ul>
-    </aside>
+          <ul>
+            <li><i class="fa-regular fa-face-smile"></i> Welcome</li>
+            <li><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</li>
+            <li><i class="fa-regular fa-clipboard"></i> Tasks</li>
+            <li><i class="fa-solid fa-users"></i> People</li>
+            <li><i class="fa-solid fa-chart-simple"></i> Reports</li>
+            <li><i class="fa-regular fa-dollar-sign"></i> Billing</li>
+            <li><i class="fa-solid fa-cubes-stacked"></i> Integrations</li>
+          </ul>
+        </aside>
+      </main>
 
-    <hr />
-    <main>
-      <section class="features">
-        <button class="new"><i class="fa-regular fa-plus"></i> New Task</button>
-        <button><i class="fa-solid fa-filter"></i> Filters</button>
-      </section>
+      <article class="content">
+        <section class="features">
+          <header>
+            <h2>To-Do</h2>
+          </header>
+          <button class="new">
+            <i class="fa-regular fa-plus"></i> New Task
+          </button>
+          <button><i class="fa-solid fa-filter"></i> Filters</button>
+        </section>
 
-      <section class="task">
-        <input type="checkbox" name="tasks" id="onboarding" value="finish" />
-        <label for="onboarding" class="task-label"
-          >Finish user onboarding</label
-        >
-        <div class="task-date">
-          <span class="tomorrow">
-            <i class="fa-regular fa-calendar-days"></i>
-            Tomorrow</span
+        <section class="task">
+          <input type="checkbox" name="tasks" id="onboarding" value="finish" />
+          <label for="onboarding" class="task-label"
+            >Finish user onboarding</label
           >
-          <span><i class="fa-regular fa-message"></i> 1</span>
-        </div>
-      </section>
+          <div class="task-date">
+            <span class="tomorrow">
+              <i class="fa-regular fa-calendar-days"></i>
+              Tomorrow</span
+            >
+            <span><i class="fa-regular fa-message"></i> 1</span>
+          </div>
+        </section>
 
-      <section class="task">
-        <input type="checkbox" name="tasks" id="issue" value="solve" />
-        <label for="issue" class="task-label"
-          >Solve the Dabble prioritisation issue</label
-        >
-        <div class="task-date">
-          <i class="fa-regular fa-calendar-days"></i> Jan 8, 2022
-          <span
-            ><i class="fa-regular fa-message"></i> 2
-            <i class="fa-solid fa-paperclip"></i> 1
-          </span>
-        </div>
-        <button class="launch">⚪LaunchPad</button>
-      </section>
+        <section class="task">
+          <input type="checkbox" name="tasks" id="issue" value="solve" />
+          <label for="issue" class="task-label"
+            >Solve the Dabble prioritisation issue</label
+          >
+          <div class="task-date">
+            <i class="fa-regular fa-calendar-days"></i> Jan 8, 2022
+            <span
+              ><i class="fa-regular fa-message"></i> 2
+              <i class="fa-solid fa-paperclip"></i> 1
+            </span>
+          </div>
+          <button class="launch">⚪LaunchPad</button>
+        </section>
 
-      <section class="task">
-        <input type="checkbox" name="tasks" id="record" value="hold" />
-        <label for="record" class="task-label"
-          >Hold to recorder on mobile</label
-        >
-        <div class="task-date">
-          <i class="fa-regular fa-calendar-days"></i> Jan 10, 2022
-        </div>
-        <button class="dabble">⚫Dabble</button>
-      </section>
+        <section class="task">
+          <input type="checkbox" name="tasks" id="record" value="hold" />
+          <label for="record" class="task-label"
+            >Hold to recorder on mobile</label
+          >
+          <div class="task-date">
+            <i class="fa-regular fa-calendar-days"></i> Jan 10, 2022
+          </div>
+          <button class="dabble">⚫Dabble</button>
+        </section>
 
-      <section class="others">
-        <input type="checkbox" name="others" id="update" value="update" />
-        <label for="update" class="others-label"
-          >Update onboarding workflow templates</label
-        >
-      </section>
+        <section class="others">
+          <input type="checkbox" name="others" id="update" value="update" />
+          <label for="update" class="others-label"
+            >Update onboarding workflow templates</label
+          >
+        </section>
 
-      <section class="others">
-        <input type="checkbox" name="others" id="connect" value="update" />
-        <label for="connect" class="others-label"
-          >Connect time tracking with tasks</label
-        >
-      </section>
-    </main>
+        <section class="others">
+          <input type="checkbox" name="others" id="connect" value="update" />
+          <label for="connect" class="others-label"
+            >Connect time tracking with tasks</label
+          >
+        </section>
+      </article>
+    </article>
   </body>
 </html>

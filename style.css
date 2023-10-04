@@ -1,14 +1,14 @@
 :root {
-  --primary-color: rgb(128, 128, 128);
-  --secondary-color: rgb(245, 245, 245);
-  --tertiary-color: rgb(0, 0, 255);
-  --fourth-color: rgb(0, 0, 0);
-  --fifth-color: rgba(207, 138, 11, 0.989);
-  --sixth-color: rgb(228, 12, 228);
-  --seventh-color: rgb(224, 22, 130);
-  --eigth-color: rgb(255, 255, 255);
-  --ninth-color: rgb(249, 205, 249);
-  --tenth-color: rgb(239, 197, 204);
+  --gray: rgb(128, 128, 128);
+  --whitesmoke: rgb(245, 245, 245);
+  --blue: rgb(0, 0, 255);
+  --black: rgb(0, 0, 0);
+  --orange: rgba(207, 138, 11, 0.989);
+  --purple: rgb(228, 12, 228);
+  --pink: rgb(224, 22, 130);
+  --white: rgb(255, 255, 255);
+  --lightpurple: rgb(249, 205, 249);
+  --lightpink: rgb(239, 197, 204);
 }
 
 * {
@@ -23,43 +23,60 @@ main {
   text-align: left;
 }
 
-aside {
-  width: 200px;
-  padding: 20px;
+.options .angle {
+  margin-inline-start: 15px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  color: var(--gray);
 }
 
 li {
   margin-bottom: 10px;
 }
 
+.page {
+  border-top: 1.5px solid var(--gray);
+  display: grid;
+  grid-template-areas: "page-top content content";
+}
+
+.page-top {
+  margin: 0px 10px;
+  border-right: 1.5px solid var(--gray);
+}
+
 .options button {
-  background-color: var(--secondary-color);
-  color: var(--fourth-color);
-  padding: 10px 50px;
-  font-size: 20px;
+  background-color: var(--whitesmoke);
+  color: var(--black);
+  margin: 20px 10px;
+  padding: 10px;
+  width: 50%;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+header {
+  border-bottom: 1.5px solid var(--gray);
+}
+
 .new {
-  background-color: var(--tertiary-color);
-  color: var(--eigth-color);
+  background-color: var(--blue);
+  color: var(--white);
   padding: 10px 10px;
   font-size: 13px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .task,
 .others {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--gray);
   margin-top: 15px;
   margin-bottom: 5px;
   border-radius: 10px;
@@ -68,7 +85,7 @@ li {
 
 .others {
   text-decoration: line-through;
-  color: var(--primary-color);
+  color: var(--gray);
 }
 
 .task .task-label {
@@ -78,18 +95,18 @@ li {
 
 .task-date {
   margin: 7px 0 7px;
-  color: var(--primary-color);
+  color: var(--gray);
   font-size: 13px;
   margin-left: 30px;
 }
 
 .task-date .tomorrow {
-  color: var(--fifth-color);
+  color: var(--orange);
 }
 
 .launch {
-  background-color: var(--ninth-color);
-  color: var(--sixth-color);
+  background-color: var(--lightpurple);
+  color: var(--purple);
   padding: 5px;
   font-size: 10px;
   border: none;
@@ -99,8 +116,8 @@ li {
 }
 
 .dabble {
-  background-color: var(--tenth-color);
-  color: var(--seventh-color);
+  background-color: var(--lightpink);
+  color: var(--pink);
   padding: 5px;
   font-size: 10px;
   border: none;
