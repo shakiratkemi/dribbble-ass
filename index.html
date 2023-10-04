@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cookie&family=Laila&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cookie&family=Dancing+Script&family=Laila&family=Outfit:wght@300;400;500&family=Oxygen&family=Oxygen+Mono&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Red+Hat+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <script
       src="https://kit.fontawesome.com/0e0646af9d.js"
@@ -19,27 +19,28 @@
   </head>
   <body>
     <header>
-      <h1>To-Do</h1>
+      <h2>To-Do</h2>
     </header>
 
-    <aside>
+    <aside class="options">
+      <hr />
       <button></button>
       <ul>
-        <li><i class="fa-regular fa-face-smile"></i>Welcome</li>
-        <li><i class="fa-regular fa-gauge-simple-high"></i>Dashboard</li>
-        <li><i class="fa-regular fa-clipboard"></i>Tasks</li>
-        <li><i class="fa-regular fa-users"></i>People</li>
-        <li>Reports</li>
-        <li>Billing</li>
-        <li>Integrations</li>
+        <li><i class="fa-regular fa-face-smile"></i> Welcome</li>
+        <li><i class="fa-solid fa-gauge-simple-high"></i> Dashboard</li>
+        <li><i class="fa-regular fa-clipboard"></i> Tasks</li>
+        <li><i class="fa-solid fa-users"></i> People</li>
+        <li><i class="fa-solid fa-chart-simple"></i> Reports</li>
+        <li><i class="fa-regular fa-dollar-sign"></i> Billing</li>
+        <li><i class="fa-solid fa-cubes-stacked"></i> Integrations</li>
       </ul>
     </aside>
 
     <hr />
     <main>
-      <section>
-        <button><i class="fa-regular fa-plus"></i> New Task</button>
-        <button><i class="fa-regular fa-filter"></i> Filters</button>
+      <section class="features">
+        <button class="new"><i class="fa-regular fa-plus"></i> New Task</button>
+        <button><i class="fa-solid fa-filter"></i> Filters</button>
       </section>
 
       <section class="tasks">
@@ -58,17 +59,17 @@
           <i class="fa-regular fa-calendar-days"></i>Jan 8, 2022
           <span
             ><i class="fa-regular fa-message"></i>2
-            <i class="fa-regular fa-paperclip"></i> 1
+            <i class="fa-solid fa-paperclip"></i> 1
           </span>
         </div>
-        <button>LaunchPad</button>
+        <button>⚪LaunchPad</button>
       </section>
 
       <section class="tasks">
         <input type="checkbox" name="tasks" id="record" value="hold" />
         <label for="record">Hold to recorder on mobile</label>
         <div><i class="fa-regular fa-calendar-days"></i>Jan 10, 2022</div>
-        <button>Dabble</button>
+        <button>⚫Dabble</button>
       </section>
 
       <section class="others">

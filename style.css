@@ -1,0 +1,53 @@
+* {
+  font-family: "Oxygen Mono", monospace;
+}
+
+header h2,
+main {
+  text-align: center;
+}
+
+aside {
+  width: 200px;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.options button {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new {
+  background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks,
+.others {
+  border: 1px solid whitesmoke;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.others {
+  text-decoration: line-through;
+}
