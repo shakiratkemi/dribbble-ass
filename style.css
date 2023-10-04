@@ -1,10 +1,26 @@
+:root {
+  --primary-color: rgb(128, 128, 128);
+  --secondary-color: rgb(245, 245, 245);
+  --tertiary-color: rgb(0, 0, 255);
+  --fourth-color: rgb(0, 0, 0);
+  --fifth-color: rgba(207, 138, 11, 0.989);
+  --sixth-color: rgb(228, 12, 228);
+  --seventh-color: rgb(224, 22, 130);
+  --eigth-color: rgb(255, 255, 255);
+  --ninth-color: rgb(249, 205, 249);
+  --tenth-color: rgb(239, 197, 204);
+}
+
 * {
   font-family: "Oxygen Mono", monospace;
 }
 
-header h2,
-main {
+header h2 {
   text-align: center;
+}
+
+main {
+  text-align: left;
 }
 
 aside {
@@ -22,8 +38,8 @@ li {
 }
 
 .options button {
-  background-color: whitesmoke;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--fourth-color);
   padding: 10px 50px;
   font-size: 20px;
   border: none;
@@ -32,8 +48,8 @@ li {
 }
 
 .new {
-  background-color: blue;
-  color: white;
+  background-color: var(--tertiary-color);
+  color: var(--eigth-color);
   padding: 10px 10px;
   font-size: 13px;
   border: none;
@@ -41,13 +57,54 @@ li {
   cursor: pointer;
 }
 
-.tasks,
+.task,
 .others {
-  border: 1px solid whitesmoke;
+  border: 1px solid var(--secondary-color);
+  margin-top: 15px;
   margin-bottom: 5px;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .others {
   text-decoration: line-through;
+  color: var(--primary-color);
+}
+
+.task .task-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.task-date {
+  margin: 7px 0 7px;
+  color: var(--primary-color);
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.task-date .tomorrow {
+  color: var(--fifth-color);
+}
+
+.launch {
+  background-color: var(--ninth-color);
+  color: var(--sixth-color);
+  padding: 5px;
+  font-size: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.dabble {
+  background-color: var(--tenth-color);
+  color: var(--seventh-color);
+  padding: 5px;
+  font-size: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 30px;
 }
