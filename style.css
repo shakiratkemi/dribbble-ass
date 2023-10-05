@@ -1,18 +1,22 @@
 :root {
-  --gray: rgb(128, 128, 128);
+  --gray: rgb(229, 229, 229);
+  --dkgray: rgb(171, 171, 171);
+  --dkrgray: rgb(67, 67, 67);
+  --dksgray: rgb(145, 145, 145);
   --whitesmoke: rgb(245, 245, 245);
-  --blue: rgb(0, 0, 255);
+  --blue: rgb(59, 64, 213);
   --black: rgb(0, 0, 0);
-  --orange: rgba(207, 138, 11, 0.989);
-  --purple: rgb(228, 12, 228);
-  --pink: rgb(224, 22, 130);
+  --orange: rgba(251, 137, 45);
+  --purple: rgb(124, 58, 237);
+  --pink: rgb(219, 39, 119);
   --white: rgb(255, 255, 255);
-  --lightpurple: rgb(249, 205, 249);
-  --lightpink: rgb(239, 197, 204);
+  --lightpurple: rgb(245, 243, 255);
+  --lightpink: rgb(253, 242, 248);
 }
 
 * {
   font-family: "Oxygen Mono", monospace;
+  background-color: var(--white);
 }
 
 header h2 {
@@ -30,7 +34,7 @@ main {
 ul {
   list-style: none;
   padding: 10px;
-  color: var(--gray);
+  color: var(--dkrgray);
   border-top: 1.5px solid var(--gray);
 }
 
@@ -73,21 +77,28 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 15px;
+  margin: 15px 0 0 100px;
+}
+
+.filters {
+  padding: 10px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .task,
 .others {
   border: 1px solid var(--gray);
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin: 15px 0 5px 100px;
   border-radius: 10px;
   padding: 10px;
 }
 
 .others {
   text-decoration: line-through;
-  color: var(--gray);
+  color: var(--dksgray);
 }
 
 .task .task-label {
@@ -97,7 +108,7 @@ header {
 
 .task-date {
   margin: 7px 0 7px;
-  color: var(--gray);
+  color: var(--dkgray);
   font-size: 13px;
   margin-left: 30px;
 }
@@ -111,6 +122,7 @@ header {
   color: var(--purple);
   padding: 5px;
   font-size: 10px;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -122,8 +134,13 @@ header {
   color: var(--pink);
   padding: 5px;
   font-size: 10px;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-left: 30px;
+}
+
+.my-filter {
+  color: rgb(15, 15, 15);
 }
