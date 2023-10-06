@@ -71,7 +71,7 @@ header {
 
 .new {
   background-color: var(--blue);
-  color: var(--white);
+  color: var(--whitesmoke);
   padding: 10px 10px;
   font-size: 13px;
   border: none;
@@ -83,7 +83,7 @@ header {
 .filters {
   padding: 10px 10px;
   font-size: 13px;
-  border: none;
+  border: 1px solid var(--gray);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -141,6 +141,8 @@ header {
   margin-left: 30px;
 }
 
-.my-filter {
-  color: rgb(15, 15, 15);
+.launch .circle,
+.dabble .circle {
+  font-size: 7px;
+  margin-right: 5px;
 }
